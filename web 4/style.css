@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f0ff;
+    color: #333;
+}
+
+header {
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #7652a5;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7652a5;
+}
+
+.hero {
+    background: #ded4ff;
+    padding: 30px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.hero div {
+    max-width: 600px;
+}
+
+.hero h1 {
+    color: #62428f;
+    margin: 10px 0;
+}
+
+.hero h3 {
+    margin-bottom: 12px;
+}
+
+.hero p {
+    line-height: 1.6;
+}
+
+.hero img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.about {
+    padding: 25px 12%;
+    text-align: center;
+    background: white;
+}
+
+.about h2 {
+    color: #7652a5;
+    margin-bottom: 12px;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+.page-title {
+    text-align: center;
+    padding: 25px;
+    background: #ded4ff;
+}
+
+.page-title h1 {
+    color: #62428f;
+    margin-bottom: 8px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 8%;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.project-card h2 {
+    color: #7652a5;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    color: #7652a5;
+    font-weight: bold;
+}
+
+.contact {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 90px;
+}
+
+button {
+    background: #7652a5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #7652a5;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+}

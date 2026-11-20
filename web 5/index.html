@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Travel Photo Gallery</h1>
+        <p>Explore beautiful places around the world</p>
+    </header>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div class="slideshow" id="slideshow">
+
+        <span class="close" onclick="closeSlide()">&times;</span>
+
+        <button class="nav-btn" onclick="previousImage()">&#10094;</button>
+
+        <img id="slideImage" src="" alt="Travel Image">
+
+        <button class="nav-btn" onclick="nextImage()">&#10095;</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
