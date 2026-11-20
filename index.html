@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">TaskFlow ✨</div>
+            <p>Make today productive!</p>
+        </header>
+
+        <section class="welcome">
+            <h1>My Tasks</h1>
+            <p>Organize your day, one task at a time.</p>
+        </section>
+
+        <!-- Task Statistics -->
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+
+        </div>
+
+        <!-- Add Task -->
+
+        <div class="input-area">
+
+            <input type="text" id="taskInput"
+                placeholder="What needs to be done?">
+
+            <button id="addBtn">+ Add Task</button>
+
+        </div>
+
+        <!-- Task List -->
+
+        <div class="task-section">
+
+            <div class="task-heading">
+                <h2>My To-Do List</h2>
+                <button id="clearBtn">Clear Completed</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">
+                🎯 No tasks yet! Add your first task.
+            </p>
+
+        </div>
+
+        <footer>
+            <p>Stay focused. Stay productive. 💜</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
