@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.form-box, .table-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: #5b4b9a;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #6655c7;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #49399e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #6655c7;
+    color: white;
+}
+
+.edit {
+    color: #287bce;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.delete {
+    background: #e74c3c;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #6655c7;
+    text-decoration: none;
+}
+

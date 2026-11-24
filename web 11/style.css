@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        120deg,
+        #89d4cf,
+        #6e9fe8,
+        #a7c7e7
+    );
+    background-size: 200% 200%;
+    animation: sky 8s ease infinite;
+}
+
+@keyframes sky {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 380px;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.container > p {
+    color: #f4faff;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+input {
+    width: 70%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.9);
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #2457a7;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #163d7c;
+}
+
+#weatherResult {
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.85);
+    color: #24415f;
+    line-height: 2;
+}
+
+#weatherResult h2 {
+    color: #2457a7;
+    margin-bottom: 8px;
+}

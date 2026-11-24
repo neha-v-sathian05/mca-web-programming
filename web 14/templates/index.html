@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Contact Us</h1>
+
+        <p>Send us your message</p>
+
+        <!-- Display confirmation messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Contact form -->
+        <form action="/submit" method="POST">
+
+            <label>Name</label>
+            <input type="text" name="name"
+                   placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea name="message"
+                      placeholder="Enter your message"
+                      rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

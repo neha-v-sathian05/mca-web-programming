@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Feed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daily News</h1>
+        <p>Stay updated with the latest headlines</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput"
+               placeholder="Search for news...">
+        <button onclick="searchNews()">Search</button>
+        <button onclick="loadNews()">Latest News</button>
+    </div>
+
+    <main>
+        <div id="newsContainer" class="news-container">
+            <p>Loading news.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

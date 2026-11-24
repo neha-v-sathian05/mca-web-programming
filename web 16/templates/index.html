@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee Management System</h1>
+    <p class="subtitle">Add, view, update and delete employee records</p>
+
+    <div class="form-box">
+        <h2>Add New Employee</h2>
+
+        <form action="/add" method="POST">
+            <input type="text" name="name" placeholder="Employee Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="text" name="department" placeholder="Department" required>
+
+            <button type="submit">Add Employee</button>
+        </form>
+    </div>
+
+    <div class="table-box">
+        <h2>Employee Records</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee.id }}</td>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.department }}</td>
+                <td>
+                    <a class="edit" href="/edit/{{ employee.id }}">Edit</a>
+
+                    <form action="/delete/{{ employee.id }}" method="POST" class="delete-form"
+                          onsubmit="return confirm('Delete this employee?');">
+                        <button class="delete" type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="5">No employee records found.</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
